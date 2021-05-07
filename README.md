@@ -1,8 +1,9 @@
 # ApiRTC-angular-ionic-tutorial
 
-Tutorial for building an **ApiRTC** **webapp** developped in **angular** with **ionic**
+Tutorial for building an **ApiRTC** **webapp** developped in **angular** with **ionic**.
 
 ## Install Ionic :
+
 `sudo npm install -g @ionic/cli`
 
 ## Clone ApiRTC-angular app
@@ -20,13 +21,14 @@ Clone with renaming with ionic suffix if you already have cloned ApiRTC-angular 
 ## Ionic-ize the app 
 
 `ionic init`
- => give same name as the angular app : ApiRTC-angular
+
+ => give same name as the angular app : `ApiRTC-angular`
 
 Edit `angular.json` to modify `outputPath` with :
 
 	"outputPath": "www",
 	
-Edit `src/index.html` to modify `<base href` and wrap `<app-root>` into `<ion-content>` to enable scroll.
+Edit `src/index.html` to modify `<base href` and wrap `<app-root>` into `<ion-content>` to enable scroll :
 
     <base href="./">
     <body>
