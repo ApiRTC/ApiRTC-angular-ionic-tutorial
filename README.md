@@ -48,7 +48,7 @@ Add Android capacitor :
 
 `ionic cap add android`
 
-If working on linux and want to work with Android : add linuxAndroidStudioPath in capacitor.config.json :
+If working on linux, add `linuxAndroidStudioPath` in capacitor.config.json :
 
     {
       "appId": "io.ionic.starter",
@@ -69,7 +69,7 @@ Open in studio :
 
 `ionic cap open android`
 
-From Studio, you can run the App on your device or an AVD. You can use the original angular app as a peer, or even the live pure JS demo at https://apizee.github.io/ApiRTC-examples/conferencing/index.html
+From **AndroidStudio**, you can run the app on your device or an AVD. You can use the original angular app as a peer, or even the live **pureJS** demo at https://apizee.github.io/ApiRTC-examples/conferencing/index.html
 
 ## For IOS
 
