@@ -1,4 +1,4 @@
-# ApiRTC-angular-ionic-tutorial
+# Ionic over ApiRTC/ Angular Steps by Steps Tutorial
 
 Tutorial for building an **ApiRTC** **webapp** developped in **angular** with **ionic**.
 
@@ -72,6 +72,8 @@ Open in studio :
 From **AndroidStudio**, you can run the app on your device or an AVD. You can use the original angular app as a peer, or even the live **pureJS** demo at https://apizee.github.io/ApiRTC-examples/conferencing/index.html
 
 ## For IOS
+
+`ionic cap add ios`
 
 // TODO
 
