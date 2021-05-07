@@ -1,6 +1,6 @@
 # Ionic over ApiRTC/ Angular Steps by Steps Tutorial
 
-Tutorial for building an **ApiRTC** **webapp** developped in **angular** with **ionic**.
+Tutorial for building an **ionic** **mobile app** from **ApiRTC**/**angular** **webapp** available at https://github.com/apizee/ApiRTC-angular.
 
 ## Install Ionic :
 
