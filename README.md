@@ -22,11 +22,12 @@ Clone with renaming with ionic suffix if you already have cloned ApiRTC-angular 
 `ionic init`
  => give same name as the angular app : ApiRTC-angular
 
-Edit `angular.json`
+Edit `angular.json` to modify `outputPath` with :
 
 	"outputPath": "www",
 	
-Edit `src/index.html` to modify `base href` and wrap `<app-root>` into `<ion-content>` to enable scroll.
+Edit `src/index.html` to modify `<base href` and wrap `<app-root>` into `<ion-content>` to enable scroll.
+
     <base href="./">
     <body>
         <ion-content overflow-scroll="true">
