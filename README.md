@@ -71,7 +71,11 @@ Open in studio :
 
 From **AndroidStudio**, you can run the app on your device or an AVD. You can use the original angular app as a peer, or even the live **pureJS** demo at https://apizee.github.io/ApiRTC-examples/conferencing/index.html
 
-## For IOS
+## For iOS
+
+Edit `src/index.html` to add content top-offset for iOS :
+
+`<ion-content style="position:absolute; top:40px" overflow-scroll="true">`
 
 Add iOS capacitor :
 
