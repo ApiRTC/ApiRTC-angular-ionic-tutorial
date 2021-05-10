@@ -73,11 +73,15 @@ From **AndroidStudio**, you can run the app on your device or an AVD. You can us
 
 ## For IOS
 
-Add IOS capacitor :
+Add iOS capacitor :
 
 `ionic cap add ios`
 
-// TODO
+`ionic cap open ios`
+
+Setup certificates inside *Xcode -> Signing & Capabilities* project section.
+
+Then build from Xcode.
 
 ## Modify 
 
