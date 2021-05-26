@@ -48,7 +48,7 @@ Add Android capacitor :
 
 `ionic cap add android`
 
-If working on linux, add `linuxAndroidStudioPath` in capacitor.config.json :
+If working on linux, add `linuxAndroidStudioPath` in capacitor.config.json (with your own /path/to) :
 
     {
       "appId": "io.ionic.starter",
@@ -62,7 +62,7 @@ If working on linux, add `linuxAndroidStudioPath` in capacitor.config.json :
         }
       },
       "cordova": {},
-      "linuxAndroidStudioPath": "/home/kmoyse/opt/android-studio/bin/studio.sh"    
+      "linuxAndroidStudioPath": "/path/to/android-studio/bin/studio.sh"    
     }
 
 Open in studio :
