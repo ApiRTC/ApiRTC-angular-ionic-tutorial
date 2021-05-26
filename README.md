@@ -42,7 +42,7 @@ Edit `src/index.html` to modify `<base href` and wrap `<app-root>` into `<ion-co
 
 `ionic build --project="ApiRTC-angular"`
 
-## For Android
+### For Android
 
 Add Android capacitor :
 
@@ -71,7 +71,7 @@ Open in studio :
 
 From **AndroidStudio**, you can run the app on your device or an AVD. You can use the original angular app as a peer, or even the live **pureJS** demo at https://apizee.github.io/ApiRTC-examples/conferencing/index.html
 
-## For iOS
+### For iOS
 
 Edit `src/index.html` to add content top-offset for iOS :
 
