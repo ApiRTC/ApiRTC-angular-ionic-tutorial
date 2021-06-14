@@ -6,6 +6,8 @@ Tutorial for building an **ionic** **mobile app** from **ApiRTC**/**angular** **
 
 `sudo npm install -g @ionic/cli`
 
+Note : This tutorial was made with **ionic 6.16.1**.
+
 ## Clone ApiRTC-angular app
 
 Clone with renaming with ionic suffix if you already have cloned ApiRTC-angular :
