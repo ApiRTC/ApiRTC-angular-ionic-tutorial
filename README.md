@@ -73,6 +73,8 @@ From **AndroidStudio**, you can run the app on your device or an AVD. You can us
 
 ### For iOS
 
+Please note that **IOS 14.5+** is required.
+
 Edit `src/index.html` to add content top-offset for iOS :
 
 `<ion-content style="position:absolute; top:40px" overflow-scroll="true">`
