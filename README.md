@@ -50,22 +50,9 @@ Add Android capacitor :
 
 `ionic cap add android`
 
-If working on linux, add `linuxAndroidStudioPath` in capacitor.config.json (with your own /path/to) :
+If working on linux, configure `CAPACITOR_ANDROID_STUDIO_PATH` env variable (with your own /path/to) :
 
-    {
-      "appId": "io.ionic.starter",
-      "appName": "ApiRTC-angular",
-      "bundledWebRuntime": false,
-      "npmClient": "npm",
-      "webDir": "www",
-      "plugins": {
-        "SplashScreen": {
-          "launchShowDuration": 0
-        }
-      },
-      "cordova": {},
-      "linuxAndroidStudioPath": "/path/to/android-studio/bin/studio.sh"    
-    }
+    export CAPACITOR_ANDROID_STUDIO_PATH=/path/to/android-studio/bin/studio.sh
 
 Open in studio :
 
