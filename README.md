@@ -53,10 +53,40 @@ Add Android capacitor :
 If working on linux, configure `CAPACITOR_ANDROID_STUDIO_PATH` env variable (with your own /path/to) :
 
     export CAPACITOR_ANDROID_STUDIO_PATH=/path/to/android-studio/bin/studio.sh
+    
+Handle Android permissions :
+
+`npm install @ionic-native/android-permissions`
+
+In `app.module.ts` :
+
+    import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
+    ...
+    providers: [AndroidPermissions],
+    ...
+
+In `app.component.ts` :
+
+    constructor(private fb: FormBuilder,
+        private androidPermissions: AndroidPermissions) {
+
+        this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.CAMERA).then(
+          result => console.log('Has permission?', result.hasPermission),
+          err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA)
+        );
+
+        this.androidPermissions.requestPermissions([this.androidPermissions.PERMISSION.CAMERA, this.androidPermissions.PERMISSION.GET_ACCOUNTS]);
+    }
 
 Open in studio :
 
 `ionic cap open android`
+
+In AndroidManifest.xml :
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
 From **AndroidStudio**, you can run the app on your device or an AVD. You can use the original angular app as a peer, or even the live **pureJS** demo at https://apizee.github.io/ApiRTC-examples/conferencing/index.html
 
