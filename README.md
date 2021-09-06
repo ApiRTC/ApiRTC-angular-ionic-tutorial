@@ -88,7 +88,7 @@ In AndroidManifest.xml :
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-From **AndroidStudio**, you can run the app on your device or an AVD. You can use the original angular app as a peer, or even the live **pureJS** demo at https://apizee.github.io/ApiRTC-examples/conferencing/index.html
+From **AndroidStudio**, you can run the app on your device or an AVD. You can use the original angular app as a peer https://apirtc.github.io/ApiRTC-angular/, or even the live **pureJS** demo at https://apizee.github.io/ApiRTC-examples/conferencing/index.html
 
 ### For iOS
 
