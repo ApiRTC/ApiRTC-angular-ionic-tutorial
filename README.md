@@ -106,6 +106,8 @@ Add iOS capacitor :
 
 Setup certificates inside *Xcode -> Signing & Capabilities* project section.
 
+Add privacy settings for camera and microphone to the Info.plist.
+
 Then build from Xcode.
 
 ## Modify 
