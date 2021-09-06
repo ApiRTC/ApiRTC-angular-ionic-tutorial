@@ -58,14 +58,14 @@ Handle Android permissions :
 
 `npm install @ionic-native/android-permissions`
 
-In `app.module.ts` :
+In `src/app/app.module.ts` :
 
     import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
     ...
     providers: [AndroidPermissions],
     ...
 
-In `app.component.ts` :
+In `src/app/app.component.ts` :
 
     constructor(private fb: FormBuilder,
         private androidPermissions: AndroidPermissions) {
