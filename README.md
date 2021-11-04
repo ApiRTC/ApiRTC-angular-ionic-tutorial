@@ -10,7 +10,7 @@ Note : This tutorial was made with **Ionic cli 6.16.1**.
 
 ## Clone ApiRTC-angular app
 
-Clone with renaming with ionic suffix if you already have cloned ApiRTC-angular :
+Clone with renaming with ionic suffix if you already have cloned ApiRTC-angular:
 
 `git clone https://github.com/ApiRTC/ApiRTC-angular.git ApiRTC-angular-ionic`
 
@@ -26,11 +26,11 @@ Clone with renaming with ionic suffix if you already have cloned ApiRTC-angular 
 
  => give same name as the angular app : `ApiRTC-angular`
 
-Edit `angular.json` to modify `outputPath` with :
+Edit `angular.json` to modify `outputPath` with:
 
 	"outputPath": "www",
 	
-Edit `src/index.html` to modify `<base href` and wrap `<app-root>` into `<ion-content>` to enable scroll :
+Edit `src/index.html` to modify `<base href` and wrap `<app-root>` into `<ion-content>` to enable scroll:
 
     <base href="./">
     <body>
@@ -46,26 +46,26 @@ Edit `src/index.html` to modify `<base href` and wrap `<app-root>` into `<ion-co
 
 ### For Android
 
-Add Android capacitor :
+Add Android capacitor:
 
 `ionic cap add android`
 
-If working on linux, configure `CAPACITOR_ANDROID_STUDIO_PATH` env variable (with your own /path/to) :
+If working on linux, configure `CAPACITOR_ANDROID_STUDIO_PATH` env variable (with your own /path/to):
 
     export CAPACITOR_ANDROID_STUDIO_PATH=/path/to/android-studio/bin/studio.sh
     
-Handle Android permissions :
+Handle Android permissions:
 
 `npm install @ionic-native/android-permissions`
 
-In `src/app/app.module.ts` :
+In `src/app/app.module.ts`:
 
     import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
     ...
     providers: [AndroidPermissions],
     ...
 
-In `src/app/app.component.ts` :
+In `src/app/app.component.ts`:
 
     constructor(private fb: FormBuilder,
         private androidPermissions: AndroidPermissions) {
@@ -78,11 +78,11 @@ In `src/app/app.component.ts` :
         this.androidPermissions.requestPermissions([this.androidPermissions.PERMISSION.CAMERA, this.androidPermissions.PERMISSION.GET_ACCOUNTS]);
     }
 
-Open in studio :
+Open in studio:
 
 `ionic cap open android`
 
-In AndroidManifest.xml :
+In AndroidManifest.xml:
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
@@ -94,11 +94,11 @@ From **AndroidStudio**, you can run the app on your device or an AVD. You can us
 
 Please note that **IOS 14.5+** is required.
 
-Edit `src/index.html` to add content top-offset for iOS :
+Edit `src/index.html` to add content top-offset for iOS:
 
 `<ion-content style="position:absolute; top:40px" overflow-scroll="true">`
 
-Add iOS capacitor :
+Add iOS capacitor:
 
 `ionic cap add ios`
 
@@ -112,7 +112,7 @@ Then build from Xcode.
 
 ## Modify 
 
-To take into account code modification, run :
+To take into account code modification, run:
 
 `ionic build --project="ApiRTC-angular"`
 
